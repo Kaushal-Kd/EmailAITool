@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailAITool", "EmailAITool.csproj", "{441FC16D-46F5-460C-A502-0B3F8CD1DEC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441FC16D-46F5-460C-A502-0B3F8CD1DEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441FC16D-46F5-460C-A502-0B3F8CD1DEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441FC16D-46F5-460C-A502-0B3F8CD1DEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441FC16D-46F5-460C-A502-0B3F8CD1DEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {973817F0-8ED7-40DF-9868-0C926447811A}
+	EndGlobalSection
+EndGlobal
