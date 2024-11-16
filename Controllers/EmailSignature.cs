@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EmailAITool.Model;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
@@ -13,16 +14,16 @@ namespace DynotreeServices.Controllers
         private static readonly HttpClient client = new HttpClient();
 
         [HttpPost("parseSignature")]
-        public async Task<IActionResult> ParseSignature(Input html)
+        public async Task<IActionResult> ParseSignature(HtmlInput html)
         {
 
-            if (string.IsNullOrWhiteSpace(html.Html))
+            if (string.IsNullOrWhiteSpace(html.HtmlBody))
             {
                 return BadRequest("The htmlBody field is required.");
             }
 
             string apiKey = ""; // Replace with your actual API key
-            var result = await ExtractUserDetails(apiKey, html.Html);
+            var result = await ExtractUserDetails(apiKey, html.HtmlBody);
             return Ok(result);
         }
 
